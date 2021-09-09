@@ -1,1 +1,1 @@
-"Bon toutou les zamis" 
+Z'est parti les zaaaaamis
