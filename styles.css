@@ -1,0 +1,41 @@
+.fond{
+	background-color: #EDEDED;
+}
+
+
+.brown{
+	color: brown;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.alinea{
+	text-indent: 2%;
+}
+
+li{
+	margin-top:10px;
+}
+li:first-child{
+	margin-top:0px;
+}
+
+.centrer{
+	text-align: center;
+}
+
+.encadrer {
+	color: white;
+	margin: auto;
+	background: black;
+	padding: 1em;
+	width: 50%;
+
+}
+
+.marge{
+	margin: 2em;
+
+}
