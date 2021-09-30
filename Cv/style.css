@@ -1,0 +1,64 @@
+* {margin:0; padding:0}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    position: relative;
+    display: flexbox;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    text-align: center;
+    max-height: 10em;
+    min-height: 10em;
+}
+
+div#menu{
+    float:left;
+    position: relative;
+	width:20%;
+	min-height:100%;
+	background-color:#ebebeb;
+}
+
+.marge{
+    margin-left: 25%;
+    padding-top: 2em;
+}
+
+.contact{
+    position: relative;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 150%;
+}
+
+.espace{
+    padding-top: 20%;
+}
+
+.asset-VP{
+    font-size: 200%;
+    padding-top: 2%;
+}
+
+.asset-PA{
+    font-size: 150%;
+}
+
+#cercle {
+    width: 150px;
+    height: 150px;
+    border-radius: 110px;
+    background-image:  url('https://pbs.twimg.com/media/EVaih2pWAAEY5k2.jpg');
+    background-size: 150%;
+    background-position: top 470px right 400px;
+}
+
+.position-du-cercle{
+    position: fixed;
+    margin-left: 15%;
+    top: 0%;
+}
