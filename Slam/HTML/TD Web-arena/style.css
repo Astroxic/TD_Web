@@ -1,6 +1,6 @@
 
 html{
-	font-family: montserrat,sans-serif
+	font-family: montserrat,sans-serif;
 }
 
 body{
@@ -8,6 +8,7 @@ body{
 }
 
 header {
+
 	height: 4em;
 	background-image: url(img/header-bg.jpg);
 	position: relative;
@@ -23,13 +24,49 @@ header img{
 header nav{
 	display: flex;
 	color: white;
-	position:fixed;
-	width: 100%;
-	top:2.5%;
-	height: 32px;
-	margin-right: 100px;	
-	
+	flex-direction: row;
+	justify-content: right;
+	margin-right: 20%;
 }
+
+header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+  }
+
+header li{
+	float: left;
+}
+
+header li , a{
+ 	display: block;
+  	color: white;
+  	padding: 10px 5px;
+  	text-decoration: none;
+
+}
+
+header li a:hover {
+	background-image: linear-gradient(white, white);
+	background-position: top center ;/*Adjust the background-position to move the line*/
+	background-size: 100% 3px; /*Adjust the background size to control length and height*/
+	background-repeat: no-repeat;	
+	margin-top: 0;
+	padding-top: 10px;
+  }
+
+
+
+.underline {
+	background-image: linear-gradient(rgb(79, 183, 243), rgb(79, 183, 243));
+	background-position: bottom center; /*Adjust the background-position to move the line*/
+	background-size: 3% 4px; /*Adjust the background size to control length and height*/
+	background-repeat: no-repeat;
+	padding-bottom: 20px; /* this can also control the position */
+}
+  
 
 footer{
 	background-color: rgb(64, 165, 224);
@@ -37,7 +74,12 @@ footer{
 	bottom: 0;
 	width: 100%;
 	height: 7%;
-	color: white;
+	color: white;	
+}
+
+footer p{
+	text-align: center;
+	position: relative;
 	
 }
 
@@ -48,10 +90,21 @@ main {
 	position: relative;
 
 }
+
+.décoration-titre{
+	text-decoration: underline rgb(79, 183, 243);
+	text-decoration-thickness: 4px;
+	text-underline-offset: 1em;
+	padding-bottom: 1em;
+
+
+}
+
 article{
 	text-align: center;
 	margin-top: 100px;
 }
+
 button{
 	background-color: white;
 	display: inline-block;
