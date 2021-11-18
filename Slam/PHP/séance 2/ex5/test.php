@@ -18,24 +18,18 @@
 
     $NbrCol=$_GET['NbrCol'];
     $NbrLigne=$_GET['NbrLigne'];
-    $j=0;
-    $i=0;
 ?>
-<table border ="5">
+
+<table border='1'>
 <?php
-echo '<table>';
-for ($i=0; $i<=$NbrLigne; $i++) {
-   echo '<tr>';
-   for ($j=0; $j<=$NbrCol; $j++) {
-         echo '<td>';
     
-         echo $i;
-         echo $j;
-        echo '</td>';
-   }
-   echo '</tr>';
-   $j=1;
-}
-echo '</table>';
+    for($i=0; $i<$NbrLigne;$i++){
+        echo '<tr>';
+        for($j=0; $j<$NbrCol;$j++){
+            echo "<td>$i-$j</td>";
+        }
+        echo '</tr>';
+    }
 ?>
+</table>
 </body></html> 
