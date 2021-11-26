@@ -1,13 +1,25 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css"/>
+        <title>Site Perso de Test</title>
     </head>
+    <header>
+        <nav>
+            <ul>
+                <li><a>ACCUEIL</a></li>
+                <li><a>A PROPOS</a></li>
+                <li><a>COMPÉTENCES</a></li>
+                <li><a>CONTACT</a></li>
+                <li><a href="#experiences">EXPERIENCES</a></li>
+                </ul>
+            </nav>
+        </header>
     <body>
-        <main>
-            <section>
-                <audio src="https://www.youtube.com/watch?v=pU0tHsFs828" controls></audio>
+        
+            <div id="experiences">  
                 <?php include("php/experience.php"); ?>
-            </section>
-        </main>
+            </div> 
+
+        
     </body>
 </html>
