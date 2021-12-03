@@ -2,67 +2,62 @@
     margin: 0;
 }
 
-div{
-    display: block;
-    text-align: center;
-    border: dashed red;
-    margin: auto;
-    height: 20vh;
-	width: 20vh;
-    
-}
-
 header {
 	display: block;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAhFBMVEW8AAD80Ra4AAD/2Rf/2Bf91Bb/2xfQXwrspxL/3xj1vRT8zxb/3RfxtBO2AADRXQregw7BHQPkkw/6yxXnmxDZdgzLSAj4xRXurBLqpBHPWAnNTwjbfA3ZdAz1vxTjjw/HPAbFMwXUaQvfhg7DKATVbQvFNwbJQwfjkQ/xshPNUwnpnxF/fzkLAAAEbElEQVR4nO3ca5OaMBQGYDi5CN4QEEFX8b529f//v0KCiBq70JkuMn2faet29cOZd04gJKBlAQBAPcu2C+g0ihdtl9BlB3dKbdfQXbSUYds1dBj1A/nRdhHd5buHEUbv36LlYLyyEV9TPW2RBuTLyFP/2W3arqozTuGQSzczyw5/2cuQM3fddlEdQlMZjceUj1siGvvp4IQx3AD1WN8vEqOVm7RbTfeQ3xee/jFxV2i9xugi1OtkuEV6zdHXhSzKL9y2bZfSSe45G8ERUbpG9zW3E2OP9WViTWLE1xgll8Ddj7fxwBti9DYnhD3L227q8gnar6md6+gfyBMp4muIkuiaWXYC2bRZSifdTfZw8APoDiq0XUf3EPmn42Q6dxxnHkS9g4UM6/OP85gPpZTZX8YF5zJ0VkiwHn8ReR+fvm/529M5Wo9slk2fswyTDwTYWHbs20z6Uti2kOkZAf4Fos+pyANkjt92Ld1EfsDzAO0FGrCm+3kLbfvctm2JxYM6KBnKQdwfzQOvDHAt8/wC5Pe9UTZUs8GakeU2Ee1Y9juGpedvpSo97bZWSgs1fiPk90d+XEmPe7e0iv6btVjb+zuElfSYV+01CvL+wy1/r9HWrqb3MFOhfFiLC4bvC3SyX4xc7aROv6dWant/dK6EZ/PeU5uRk7ffCO1nQj1eSU+YrjE+Vfvh7GFAR2lX45sb4qN8SigctN+zyV162eAdGT60yhtU/HhtHXBhldZT//SfP3TI3+G7n6/u7dG0zE+oGZ4pP8on1cZx/d+jQOcnxGy8lOb8aJ63X4j4DHR+wv4ki/Y6v/TxI5M8PnFopb53l+cnQpUN/WLG/NS5Axe+ZhQM42JNnqbG49+O49zxGu3LHQ26mPJTU2uOB32/R44hv6Oa+CG+GijR+VXnzxG6rzb60vPnr3KiQgHmzQ3obQ+elFse6hc489alNz54uUqg2xE75nUV+RXXaWq/yMazCvXprSOuniuni7rowDPm9fl680hv8armY+e2a3pL6ZQ2hr4q8pN7orX6CZttBhQLEQ53hvwOev1PLn3VfHyJsWuwE6rHDO9si2XAGM33mj9Qp4Wx4a1TZQtOej9eWQfQrIjHdBcazcpNOGwUmVDvulTPw+cNXos+xHUAt1Dc26NidX6grsnS3eO99PmXG+hwn249AIvWuvdCa6QWpHi43tyeiSE6BKI8+uEJt0cU6D1ediYrKfaLWHxZqZUB/zwZ8dupQwxwwXuPIp2eujCjvbwe5jiTkmd/rp2nXwUmLg/C6lmBZnH1Xpdb27FfL7bf/nc6PlbeebYccPEYnhzNqNh+k8c2i3076r4zm90mfGStUl493nGRnPWKizqz4Oh3xw+5kPfTYdounVgyxrMDYDw/lt9o5TDB8IWwj/bO8zpANnPxTx+zrVV9rJeC6QEzv0f1H3zGI9IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPCP/Aa89SzmeytggAAAAABJRU5ErkJggg==");
+	background: linear-gradient(90deg, rgba(0,21,55,1) 0%, rgba(24,0,120,1) 46%, rgba(109,0,119,1) 72%);
+	box-shadow: 0px 5px 5px black;
     text-shadow: 5px 2px 5px black;
-	height: 10vh;
+	height: 12vh;
 	position: relative;
 	min-width: 100%;
 	max-width: 100%;
 	margin-bottom: 8vh;
 }
 
+body{
+	background: rgb(0,19,50);
+	background: linear-gradient(90deg, rgba(0,19,50,1) 0%, rgba(22,0,111,1) 46%, rgba(99,0,108,1) 72%);
+	color: white;
+}
+
 header nav{
 	display: flex;
-	font-size: 3vh;
 	color: white;
 	flex-direction: row;
 	justify-content: center;
 }
 
-header ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-  }
+.liennav {
+	font-size: 5vh;
+	color: white;
+    border-radius: 20px;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
 
-header li{
-	float: left;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-header li , a{
- 	display: block;
-  	color: white;
-  	padding: 10px 5px;
-  	text-decoration: none;
 
+  section:not(:target){
+    display: none;
+}
+section:target{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header li a:hover {
-	background-image: linear-gradient(white, white);
-	background-position: bottom center ;/*Adjust the background-position to move the line*/
-	background-size: 100% 0.7vh; /*Adjust the background size to control length and height*/
-	background-repeat: no-repeat;	
-	margin-top: 0;
-	padding-top: 10px;
-  }
-
-#experiences{
-	display: none;
+.tiAcc {
+    font-size: 3em;
+    font-style: italic;
+    text-decoration: underline
 }
-
-  #experiences:target{
-	display: block;
+.subAcc {
+    font-style:italic;
+    text-decoration:underline;
 }

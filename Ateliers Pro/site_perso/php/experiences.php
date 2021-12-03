@@ -1,11 +1,6 @@
 <?php
-
-
 $data=yaml_parse_file('yaml/experiences.yaml');
-/*echo "<pre>";
-print_r($data);
-echo "</pre>";
-*/
+
 
 foreach($data as $experience){
     echo "<div>";
