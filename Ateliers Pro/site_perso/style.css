@@ -1,11 +1,11 @@
 *{
     margin: 0;
+    max-width: 100%;
 }
 
 header {
 	display: block;
-	background: rgb(0,20,52);
-	background: linear-gradient(90deg, rgba(0,20,52,1) 0%, rgba(25,0,125,1) 49%, rgba(107,0,163,1) 80%);
+	background-color: var(--1)!important;
 	box-shadow: 0px 5px 5px black;
     text-shadow: 5px 2px 5px black;
 	height: 12vh;
@@ -16,9 +16,9 @@ header {
 }
 
 body{
-	background: rgb(0,20,52);
-	background: linear-gradient(90deg, rgba(0,20,52,1) 0%, rgba(25,0,125,1) 49%, rgba(107,0,163,1) 80%);
+    background: var(--i);
 	color: white;
+    font-family: Montserrat,sans-serif;
 }
 
 header nav{
@@ -28,38 +28,39 @@ header nav{
 	justify-content: center;
 }
 
-.liennav {
-	font-size: 5vh;
-	color: white;
-	background: rgb(0,20,52);
-	background: transparent;
-	box-shadow: 0px 0px 5px 5px black;
-    border-radius: 20px;
-    display: inline-block;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 8%;
 
+.h1menu {
+    color: white;
     text-decoration: none;
-    margin-left: 15px;
-    margin-right: 15px;
-	margin-top: 2%;
 }
 
-.contournav {
-    border-radius: 20px;
-    padding-bottom: 2px;
-    padding-right: 2px;
-    padding-left: 2px;
-    padding-top: 2px;
-    margin-left: 5px;
-    margin-right: 5px;
+
+.btn-grad {background-image: linear-gradient(to right, #ED4264 0%, #FFEDBC  51%, #ED4264  100%)}
+.btn-grad {
+   margin-top: 1.5%;
+    margin-left: 20px;
+    padding: 1% 3%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.2s;
+    background-size: 200% auto;
+    color: white;            
+    -webkit-box-shadow: 0px 2px 20px 15px #191D2A; 
+    box-shadow: 0px 2px 20px 15px #191D2A;
+    border-radius: 10px;
+    display: block;
 }
 
-  section:not(:target){
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;  
+ }
+
+
+section:not(:target){
     display: none;
 }
+
 section:target{
     display: flex;
     flex-direction: column;
@@ -76,6 +77,113 @@ section:target{
     text-decoration:underline;
 }
 
-footer{
 
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    background: #191D2A;  
+    padding: 3.5rem 0.75rem;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+[data-scheme=dark] {
+    --21: "dark";
+    --4u: #e6e6e6;
+    --12: #e6e6e6;
+    --4v: #ededed;
+    --22: #ededed;
+    --4w: #dbdbdb;
+    --1k: #dbdbdb;
+    --4x: #2c3049;
+    --2v: #2c3049;
+    --4y: #141624;
+    --l: #141624;
+    --4z: #121b4f;
+    --19: #121b4f;
+    --50: #2c3049;
+    --17: #2c3049;
+    --51: #b6b4ca;
+    --6: #b6b4ca;
+    --52: #b6b4ca;
+    --m: #b6b4ca;
+    --53: #646882;
+    --5: #646882;
+    --54: #42476c;
+    --f: #42476c;
+    --55: #0a0a0a;
+    /* --v: #0a0a0a; */
+    --56: #2c3049;
+    --1: #2c3049;
+    --57: #fff;
+    --2: #fff;
+    --58: #1e2334;
+    --i: #1e2334;
+    --59: #5770ff;
+    --4: #5770ff;
+    --5a: #151200;
+    --20: #151200;
+    --5b: #425fff;
+    --2f: #425fff;
+    --5c: #425fff;
+    --2h: #425fff;
+    --5d: #f5f5f5;
+    --2j: #f5f5f5;
+    --1l: #ff7c6b;
+    --b: #ff7c6b;
+    --5e: #f4a825;
+    --2m: #f4a825;
+    --1q: #50e2c3;
+    --1o: #50e2c3;
+    --5f: #5770ff;
+    --c: #5770ff;
+    --5g: #b86bff;
+    --q: #b86bff;
+    --5h: #ff0522;
+    --1v: #ff0522;
+    --5i: #b6b4ca;
+    --2s: #b6b4ca;
+    --5j: #ff75b3;
+    --d: #ff75b3;
+    --5k: rgba(182,180,202,0.4);
+    --o: rgba(182,180,202,0.4);
+    --5l: rgba(226,233,238,0.4);
+    --n: rgba(226,233,238,0.4);
+    --5m: #1a1d2d;
+    --3: #1a1d2d;
+    --5n: rgba(225,224,245,0.4);
+    --18: rgba(225,224,245,0.4);
+    --5o: #947ffa;
+    --11: #947ffa;
+    --5p: 44,48,73;
+    --u: 44,48,73;
+    --5q: 87,112,255;
+    --34: 87,112,255;
+    --5r: 87,112,255;
+    --h: 87,112,255;
+    --5s: 198,68,253;
+    --37: 198,68,253;
+    --5t: 31,35,55;
+    --g: 31,35,55;
+    --5u: linear-gradient(45deg,#333e80,#5f2f83);
+    --t: linear-gradient(45deg,#333e80,#5f2f83);
+    --5v: linear-gradient(-45deg,#333e80,#5f2f83);
+    --3s: linear-gradient(-45deg,#333e80,#5f2f83);
+    --5w: linear-gradient(-45deg,#333e80,#333e80 60%,#5f2f83);
+    --3v: linear-gradient(-45deg,#333e80,#333e80 60%,#5f2f83);
+    --5x: linear-gradient(45deg,#be60a0,#be6472);
+    --x: linear-gradient(45deg,#be60a0,#be6472);
+    --5y: linear-gradient(-45deg,#be60a0,#be6472);
+    --46: linear-gradient(-45deg,#be60a0,#be6472);
+    --5z: linear-gradient(45deg,rgba(var(--34),0.5) 0%,rgba(137,82,254,0.5) 100%);
+    --r: linear-gradient(45deg,rgba(var(--34),0.5) 0%,rgba(137,82,254,0.5) 100%);
+    --60: linear-gradient(45deg,rgba(251,96,117,0.5) 0%,rgba(var(--1y),0.5) 100%,rgba(var(--1y),0.5) 100%);
+    --4h: linear-gradient(45deg,rgba(251,96,117,0.5) 0%,rgba(var(--1y),0.5) 100%,rgba(var(--1y),0.5) 100%);
+    --61: linear-gradient(45deg,var(--b) 0%,rgba(250,92,129,0.5) 100%);
+    --4j: linear-gradient(45deg,var(--b) 0%,rgba(250,92,129,0.5) 100%);
+    --62: linear-gradient(-135deg,rgba(146,80,251,0.5) 0%,rgba(77,89,254,0.5) 84%,rgba(var(--34),0.5) 100%);
+    --4o: linear-gradient(-135deg,rgba(146,80,251,0.5) 0%,rgba(77,89,254,0.5) 84%,rgba(var(--34),0.5) 100%);
 }

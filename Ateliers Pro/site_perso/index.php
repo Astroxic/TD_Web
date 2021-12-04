@@ -2,17 +2,18 @@
 $content=\file_get_contents('yaml/menu.yaml');
 $page=yaml_parse($content);
 ?>
-<html>
+<html lang="fr-FR" data-scheme="dark">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css"/>
         <title>Page Non Officiel</title>
     </head>
     <header>
+        <div class="header_border-gradient"></div>
         <nav>
             <?php
             foreach ($page as $menu=>$ancre){
-                echo "<div class='contournav'><a class='liennav' href='#$ancre'>$menu</a></div>";
+                echo "<div class='btn-grad'><a class='h1menu' href='#$ancre'>$menu</a></div>";
             }
             ?>
             </nav>
@@ -30,6 +31,6 @@ $page=yaml_parse($content);
        
     </body>
     <footer>
-        <p>Tous droit réservé à la RFF© (Russian Fake Fédération)</p>
+        <p>Tous droit réservé à Moi-même©</p>
     </footer>
 </html>

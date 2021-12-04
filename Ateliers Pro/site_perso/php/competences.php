@@ -1,6 +1,6 @@
 <?php
-$competence=\file_get_contents('./yaml/competences.yaml');
-$com=yaml_parse($competence);
+$competences=\file_get_contents('./yaml/competences.yaml');
+$comp=yaml_parse($competences);
 ?>
 <h1>Mes compétences</h1>
 <h3>Mes compétences en développement</h3>
