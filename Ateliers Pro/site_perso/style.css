@@ -34,8 +34,6 @@ header nav{
     text-decoration: none;
 }
 
-
-.btn-grad {background-image: linear-gradient(to right, #ED4264 0%, #FFEDBC  51%, #ED4264  100%)}
 .btn-grad {
    margin-top: 1.5%;
     margin-left: 20px;
@@ -78,15 +76,6 @@ section:target{
 }
 
 
-footer{
-    position: absolute;
-    bottom: 0;
-    height: 20px;
-    background: #191D2A;  
-    padding: 3.5rem 0.75rem;
-    width: 100%;
-    text-align: center;
-}
 
 
 
