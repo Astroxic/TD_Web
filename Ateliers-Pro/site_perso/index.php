@@ -13,7 +13,7 @@ $page=yaml_parse($content);
         <nav>
             <?php
             foreach ($page as $menu=>$ancre){
-                echo "<div class='btn-grad'><a class='h1menu' href='#$ancre'>$menu</a></div>";
+                echo "<span><a class='btn-menu h1menu' href='#$ancre'>$menu</a></span>";
             }
             ?>
             </nav>
