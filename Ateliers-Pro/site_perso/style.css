@@ -5,7 +5,7 @@
 
 header {
 	display: block;
-	background-color: var(--1)!important;
+	background-color: #2c3049!important;
 	box-shadow: 0px 5px 5px black;
     text-shadow: 5px 2px 5px black;
 	height: 15%;
@@ -16,7 +16,7 @@ header {
 }
 
 body{
-    background: var(--i);
+    background: #1e2334;
 	color: white;
     font-family: Montserrat,sans-serif;
 }
@@ -28,10 +28,30 @@ body{
     margin-left: 30vh;
     margin-top: 10vh;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 10px #191D2A;
+    box-shadow: 0px 0px 8px 10px black;
     height: 30vh;
     width: 40vh;
 
+}
+
+
+#competences div.conteneur{  
+    display: flex;
+    flex-direction: row;
+    max-height: 50px;
+    width: 10px;
+    
+}
+
+#competences div.Titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#competences div.contenu{
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -58,9 +78,8 @@ header nav{
     padding-left: 2vh;
     padding-right: 2vh;   
     text-align: center;
-    text-transform: uppercase;
-    color: white;            
-    -webkit-box-shadow: 0px 2px 20px 15px #191D2A; 
+    text-transform: uppercase;   
+    -webkit-box-shadow: 0px 0px 4px 6px #191D2A; 
     box-shadow: 0px 0px 4px 6px #191D2A;
     border-radius: 20px;
     display: flex;
@@ -92,110 +111,11 @@ footer{
     position: fixed;
     bottom: 0;
     text-align: center;
-    background-color: var(--1);
+    background-color: #2c3049;
     height: 10vh;
     width: 100%;
 }
 
 footer p {
     padding-top: 4vh;
-}
-
-
-[data-scheme=dark] {
-    --21: "dark";
-    --4u: #e6e6e6;
-    --12: #e6e6e6;
-    --4v: #ededed;
-    --22: #ededed;
-    --4w: #dbdbdb;
-    --1k: #dbdbdb;
-    --4x: #2c3049;
-    --2v: #2c3049;
-    --4y: #141624;
-    --l: #141624;
-    --4z: #121b4f;
-    --19: #121b4f;
-    --50: #2c3049;
-    --17: #2c3049;
-    --51: #b6b4ca;
-    --6: #b6b4ca;
-    --52: #b6b4ca;
-    --m: #b6b4ca;
-    --53: #646882;
-    --5: #646882;
-    --54: #42476c;
-    --f: #42476c;
-    --55: #0a0a0a;
-    /* --v: #0a0a0a; */
-    --56: #2c3049;
-    --1: #2c3049;
-    --57: #fff;
-    --2: #fff;
-    --58: #1e2334;
-    --i: #1e2334;
-    --59: #5770ff;
-    --4: #5770ff;
-    --5a: #151200;
-    --20: #151200;
-    --5b: #425fff;
-    --2f: #425fff;
-    --5c: #425fff;
-    --2h: #425fff;
-    --5d: #f5f5f5;
-    --2j: #f5f5f5;
-    --1l: #ff7c6b;
-    --b: #ff7c6b;
-    --5e: #f4a825;
-    --2m: #f4a825;
-    --1q: #50e2c3;
-    --1o: #50e2c3;
-    --5f: #5770ff;
-    --c: #5770ff;
-    --5g: #b86bff;
-    --q: #b86bff;
-    --5h: #ff0522;
-    --1v: #ff0522;
-    --5i: #b6b4ca;
-    --2s: #b6b4ca;
-    --5j: #ff75b3;
-    --d: #ff75b3;
-    --5k: rgba(182,180,202,0.4);
-    --o: rgba(182,180,202,0.4);
-    --5l: rgba(226,233,238,0.4);
-    --n: rgba(226,233,238,0.4);
-    --5m: #1a1d2d;
-    --3: #1a1d2d;
-    --5n: rgba(225,224,245,0.4);
-    --18: rgba(225,224,245,0.4);
-    --5o: #947ffa;
-    --11: #947ffa;
-    --5p: 44,48,73;
-    --u: 44,48,73;
-    --5q: 87,112,255;
-    --34: 87,112,255;
-    --5r: 87,112,255;
-    --h: 87,112,255;
-    --5s: 198,68,253;
-    --37: 198,68,253;
-    --5t: 31,35,55;
-    --g: 31,35,55;
-    --5u: linear-gradient(45deg,#333e80,#5f2f83);
-    --t: linear-gradient(45deg,#333e80,#5f2f83);
-    --5v: linear-gradient(-45deg,#333e80,#5f2f83);
-    --3s: linear-gradient(-45deg,#333e80,#5f2f83);
-    --5w: linear-gradient(-45deg,#333e80,#333e80 60%,#5f2f83);
-    --3v: linear-gradient(-45deg,#333e80,#333e80 60%,#5f2f83);
-    --5x: linear-gradient(45deg,#be60a0,#be6472);
-    --x: linear-gradient(45deg,#be60a0,#be6472);
-    --5y: linear-gradient(-45deg,#be60a0,#be6472);
-    --46: linear-gradient(-45deg,#be60a0,#be6472);
-    --5z: linear-gradient(45deg,rgba(var(--34),0.5) 0%,rgba(137,82,254,0.5) 100%);
-    --r: linear-gradient(45deg,rgba(var(--34),0.5) 0%,rgba(137,82,254,0.5) 100%);
-    --60: linear-gradient(45deg,rgba(251,96,117,0.5) 0%,rgba(var(--1y),0.5) 100%,rgba(var(--1y),0.5) 100%);
-    --4h: linear-gradient(45deg,rgba(251,96,117,0.5) 0%,rgba(var(--1y),0.5) 100%,rgba(var(--1y),0.5) 100%);
-    --61: linear-gradient(45deg,var(--b) 0%,rgba(250,92,129,0.5) 100%);
-    --4j: linear-gradient(45deg,var(--b) 0%,rgba(250,92,129,0.5) 100%);
-    --62: linear-gradient(-135deg,rgba(146,80,251,0.5) 0%,rgba(77,89,254,0.5) 84%,rgba(var(--34),0.5) 100%);
-    --4o: linear-gradient(-135deg,rgba(146,80,251,0.5) 0%,rgba(77,89,254,0.5) 84%,rgba(var(--34),0.5) 100%);
 }

@@ -2,7 +2,7 @@
 $content=\file_get_contents('yaml/menu.yaml');
 $page=yaml_parse($content);
 ?>
-<html lang="fr-FR" data-scheme="dark">
+<html lang="fr-FR">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css"/>
@@ -13,7 +13,7 @@ $page=yaml_parse($content);
         <nav>
             <?php
             foreach ($page as $menu=>$ancre){
-                echo "<span><a class='btn-menu h1menu' href='#$ancre'>$menu</a></span>";
+                echo "<div><a class='btn-menu h1menu' href='#$ancre'>$menu</a></div>";
             }
             ?>
             </nav>
@@ -31,6 +31,8 @@ $page=yaml_parse($content);
        
     </body>
     <footer>
-        <p>Tous droit réservé à Moi-même©</p>
+        <?php
+        include("php/footer.php");
+        ?>
     </footer>
 </html>
