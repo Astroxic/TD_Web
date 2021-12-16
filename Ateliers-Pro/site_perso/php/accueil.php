@@ -9,7 +9,6 @@ $acc=yaml_parse($accueil);
     echo '<div id="display">';
         echo '<div id="photo">';
             echo '<img src="'.$acc['photo']['src']['1'].'"/>';
-            echo '<img src="'.$acc['photo']['src']['2'].'"/>';
         echo '</div>';
     echo '</div>';
 ?>
